@@ -9,7 +9,7 @@ import { NotificationsModule } from './notifications/notifications.module';
       host: 'dpg-d0vi1mffte5s739n7eeg-a',
       port: 5432,
       username: 'art',
-      password: 'ric@FPPWUWx5kdtxJTIRXbgprwQ2aQ45bp4w',
+      password: 'FPPWUWx5kdtxJTIRXbgprwQ2aQ45bp4w',
       database: 'notification_db_6c44',
       autoLoadEntities: true,
       synchronize: true,
