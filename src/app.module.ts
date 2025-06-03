@@ -6,11 +6,17 @@ import { NotificationsModule } from './notifications/notifications.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: 'postgresql://art:FPPWUWx5kdtxJTIRXbgprwQ2aQ45bp4w@dpg-d0vi1mffte5s739n7eeg-a/notification_db_6c44',
+      host: 'localhost',
+      port: 5432,
+      username: 'postgres',
+      password: 'ric@rdo1802',
+      database: 'notification_db',
       autoLoadEntities: true,
       synchronize: true,
     }),
     NotificationsModule,
+ 
   ],
+
 })
 export class AppModule {}
