@@ -11,8 +11,11 @@ import { AppService } from './app.service';
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      ssl: {
+        rejectUnauthorized: false, // Requerido por Railway
+      },
       synchronize: true,
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
     }),
     NotificationsModule,
   ],
